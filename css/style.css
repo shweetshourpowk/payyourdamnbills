@@ -41,7 +41,7 @@ nav div .fa {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: cadetblue;
+  background-color: #e9e9dd;
 }
 .view:not(:first-child) {
   left: 100%;
@@ -50,10 +50,6 @@ nav div .fa {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #bc1b51;
-}
-#firstView {
-  background-color: #e9e9dd;
 }
 #firstView #logoBox {
   width: 70px;
@@ -73,17 +69,15 @@ nav div .fa {
   background-color: #83cd9f;
 }
 #secondView {
+  background-color: #e9e9dd;
+}
+#secondView #listPaid li {
   background-color: #78bfb6;
+  height: 100px;
+  text-decoration: none;
 }
-#secondView #question {
-  width: 80%;
-  height: 10%;
-  margin: 10% auto;
-}
-#secondView #question p {
-  font-size: 20px;
-  text-align: center;
-  color: #ede915;
+#secondView #listPaid li:nth-child(odd) {
+  background-color: #48766d;
 }
 #secondView #buttons {
   width: 80%;

@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: cadetblue;
+  background-color: @bgColor;
 }
 
 .view:not(:first-child){
@@ -13,11 +13,9 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #bc1b51;
 }
 
 #firstView{
-  background-color: @bgColor;
 
   #logoBox{
     width: 70px;
@@ -42,19 +40,19 @@
 }
 
 #secondView{
-  background-color: @bgColorPaid;
+  background-color: #e9e9dd;
 
-  #question{
-    width: 80%;
-    height: 10%;
-    margin: 10% auto;
 
-    p{
-      font-size: 20px;
-      text-align: center;
-      color: @yellow;
+    #listPaid li {
+      background-color: @bgColorPaid;
+      height: 100px;
+      text-decoration: none;
     }
-  }
+
+    #listPaid li:nth-child(odd){
+      background-color: #48766d;
+    }
+
 
   #buttons{
     width: 80%;
