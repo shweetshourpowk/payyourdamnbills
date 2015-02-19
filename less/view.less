@@ -1,0 +1,75 @@
+.view{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: cadetblue;
+}
+
+.view:not(:first-child){
+  left: 100%;
+}
+
+.view:nth-child(odd){
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #bc1b51;
+}
+
+#firstView{
+  background-color: @bgColor;
+
+  #logoBox{
+    width: 70px;
+    height: 75px;
+    margin: 150px auto;
+  }
+
+  .fa{
+    font-size: 500%;
+    color: @yellow;
+  }
+
+  #list li {
+    background-color: #5e9e75;
+    height: 100px;
+    text-decoration: none;
+  }
+
+  #list li:nth-child(odd){
+    background-color: #83cd9f;
+  }
+}
+
+#secondView{
+  background-color: @bgColorPaid;
+
+  #question{
+    width: 80%;
+    height: 10%;
+    margin: 10% auto;
+
+    p{
+      font-size: 20px;
+      text-align: center;
+      color: @yellow;
+    }
+  }
+
+  #buttons{
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+
+    button{
+      width: 100%;
+      height: 20%;
+      background-color: #374e0c;
+      margin-top: 20px;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
+

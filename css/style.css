@@ -5,5 +5,97 @@
 html,
 body {
   height: 100%;
+  font-family: HelveticaNeue-Light;
+}
+body {
+  overflow: hidden;
+}
+.clearFix {
+  *zoom: 1;
+}
+.clearFix:before,
+.clearFix:after {
+  display: block;
+  clear: both;
+  content: "";
+  line-height: 0;
+}
+nav {
+  position: fixed;
   width: 100%;
+  height: 50px;
+  bottom: 0;
+  background-color: antiquewhite;
+  text-align: center;
+  z-index: 3;
+}
+nav div {
+  display: inline-block;
+  width: 24%;
+}
+nav div .fa {
+  font-size: 250%;
+  line-height: 50px;
+}
+.view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: cadetblue;
+}
+.view:not(:first-child) {
+  left: 100%;
+}
+.view:nth-child(odd) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #bc1b51;
+}
+#firstView {
+  background-color: #e9e9dd;
+}
+#firstView #logoBox {
+  width: 70px;
+  height: 75px;
+  margin: 150px auto;
+}
+#firstView .fa {
+  font-size: 500%;
+  color: #ede915;
+}
+#firstView #list li {
+  background-color: #5e9e75;
+  height: 100px;
+  text-decoration: none;
+}
+#firstView #list li:nth-child(odd) {
+  background-color: #83cd9f;
+}
+#secondView {
+  background-color: #78bfb6;
+}
+#secondView #question {
+  width: 80%;
+  height: 10%;
+  margin: 10% auto;
+}
+#secondView #question p {
+  font-size: 20px;
+  text-align: center;
+  color: #ede915;
+}
+#secondView #buttons {
+  width: 80%;
+  height: 20%;
+  margin: 0 auto;
+}
+#secondView #buttons button {
+  width: 100%;
+  height: 20%;
+  background-color: #374e0c;
+  margin-top: 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
 }
