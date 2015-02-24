@@ -136,4 +136,21 @@ nav div .fa {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  margin-bottom: 5px;
+  max-width: 185px;
+}
+#thirdView .btn {
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  color: #273c41;
+  font-size: 20px;
+  background: #83cd9f;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+#thirdView .btn:hover {
+  background: #5E9E75;
+  text-decoration: none;
+  color: #e9e9dd;
 }

@@ -67,19 +67,21 @@
 </div>
 
 <div id="thirdView" class="view">
-    <form id="addBill" >
-    <label>Bill Name: </label>
-    <input type="text">
-    <label>Due Date: </label>
-    <input type="date">
-    <label>Amount Owed: </label>
-    <input type="number">
-    </form>
+    <div id="addBill" >
+    <div><label>Bill Name: </label>
+    <input type="text"></div>
+    <div><label>Due Date: </label>
+    <input type="date"></div>
+    <div><label>Amount: </label>
+    <input type="number" maxlength="8"></div>
+    <button type="submit" class="btn" id="submitNew">Submit</button>
+    </div>
+
 </div>
 
 
 <nav>
-    <div id="first"><span><i class="fa fa-edit"></i></span></div>
+    <div id="first"><span><i class="fa fa-bars"></i></span></div>
     <div id="second"><span><i class="fa fa-check-square"></i></span></div>
     <div id="third"><span><i class="fa fa-plus-square"></i></span></div>
 </nav>

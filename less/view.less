@@ -103,9 +103,10 @@
   #addBill{
     position: relative;
     top: 50%;
-    left:50%;
+    left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+
   }
   label, input{
     font-size:1.5em;
@@ -115,7 +116,26 @@
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
+    margin-bottom: 5px;
+    max-width: 185px;
   }
+  .btn {
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    color: #273c41;
+    font-size: 20px;
+    background: #83cd9f;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background: #5E9E75;
+    text-decoration: none;
+    color:@bgColor;
+  }
+
 }
 
 
