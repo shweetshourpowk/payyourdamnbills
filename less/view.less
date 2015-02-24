@@ -28,10 +28,35 @@
     color: @yellow;
   }
 
-  #list li {
+  #list ul li {
     background-color: #5e9e75;
     height: 100px;
+    list-style-type: none;
     text-decoration: none;
+
+    .bName {
+      position: relative;
+      font-size: 40px;
+      top: 5px;
+      left: 10px;
+      float: left;
+    }
+
+    .dDate {
+      font-size: 30px;
+      position: relative;
+      left: -165px;
+      float: left;
+      top: 50px;
+    }
+
+    .bAmount {
+      position: relative;
+      float: right;
+      font-size: 50px;
+      top: 15px;
+      right: 10px;
+    }
   }
 
   #list li:nth-child(odd){
@@ -47,6 +72,7 @@
       background-color: @bgColorPaid;
       height: 100px;
       text-decoration: none;
+      list-style-type: none;
     }
 
     #listPaid li:nth-child(odd){

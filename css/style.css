@@ -60,10 +60,32 @@ nav div .fa {
   font-size: 500%;
   color: #ede915;
 }
-#firstView #list li {
+#firstView #list ul li {
   background-color: #5e9e75;
   height: 100px;
+  list-style-type: none;
   text-decoration: none;
+}
+#firstView #list ul li .bName {
+  position: relative;
+  font-size: 40px;
+  top: 5px;
+  left: 10px;
+  float: left;
+}
+#firstView #list ul li .dDate {
+  font-size: 30px;
+  position: relative;
+  left: -165px;
+  float: left;
+  top: 50px;
+}
+#firstView #list ul li .bAmount {
+  position: relative;
+  float: right;
+  font-size: 50px;
+  top: 15px;
+  right: 10px;
 }
 #firstView #list li:nth-child(odd) {
   background-color: #83cd9f;
@@ -75,6 +97,7 @@ nav div .fa {
   background-color: #78bfb6;
   height: 100px;
   text-decoration: none;
+  list-style-type: none;
 }
 #secondView #listPaid li:nth-child(odd) {
   background-color: #48766d;
