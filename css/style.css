@@ -5,7 +5,7 @@
 html,
 body {
   height: 100%;
-  font-family: HelveticaNeue-Light;
+  font-family: HelveticaNeue-Light, sans-serif;
 }
 body {
   overflow: hidden;
@@ -126,4 +126,14 @@ nav div .fa {
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
+}
+#thirdView label,
+#thirdView input {
+  font-size: 1.5em;
+  color: #273c41;
+}
+#thirdView input {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
