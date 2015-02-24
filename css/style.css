@@ -78,6 +78,7 @@ nav div .fa {
 #firstView #list ul li .dDate {
   font-size: 1.5em;
   position: relative;
+  color: #e9e9dd;
   left: -165px;
   float: left;
   top: 50px;
@@ -88,6 +89,7 @@ nav div .fa {
   font-size: 2.75em;
   top: 15px;
   right: 10px;
+  font-weight: bold;
 }
 #firstView #list li:nth-child(odd) {
   background-color: #83cd9f;
