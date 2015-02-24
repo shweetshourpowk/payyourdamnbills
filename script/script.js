@@ -1,5 +1,37 @@
 $(document).ready(function(){
+    $.getJSON("data/data.json").done(function(data){
+
+        localStorage.setItem("data", JSON.stringify(data));
+
+        $.each(data.bills, function(index, value){
+
+            $("#firstView #list ul").append(
+                "<li><span class='bName'>" + value.billname + "</span><span class='dDate'>due " + value.duedate + "</span><span class='bAmount'>$" + value.amount +
+                    "</span></li>"
+            );
+
+        });
+
+    }).fail(function(){
+
+        if(localStorage.length != 0){
+
+            var localData = $.parseJSON(localStorage.getItem("data"));
+
+            $.each(localData.bills, function(index, value){
+
+                $("#firstView #list ul").append(
+                    "<li><span class='bName'>" + value.billname + "</span><span class='dDate'>" + value.duedate + "</span><span class='bAmount'>$" + value.amount +
+                        "</span></li>"
+                );
+
+            });
+
+        }
+
+    });
     init();
+    console.log(localStorage);
 });
 
 function init(){

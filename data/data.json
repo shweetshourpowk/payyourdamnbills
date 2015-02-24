@@ -1,0 +1,11 @@
+{
+
+    "bills": [
+
+        {   "billname"   : "Credit Card", "duedate" : "March 9",         "amount"    : "123"        },
+        {   "billname"   : "Credit Card",  "duedate" : "March 9",        "amount"    : "123"        },
+        {   "billname"   : "Credit Card", "duedate" : "March 9",         "amount"    : "123"        }
+
+    ]
+
+}
