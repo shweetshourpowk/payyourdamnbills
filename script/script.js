@@ -27,5 +27,9 @@ function setBindings(){
 
         }
     });
+
+
+
+
 }
 
